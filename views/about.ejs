@@ -1,0 +1,42 @@
+<% include Partials/header.ejs%>
+<% include Partials/mainNav.ejs%>
+<% include Partials/footer.ejs%>
+<div id="pageBack">
+    <link href="/Content/full.css" rel="stylesheet" type="text/css">
+    <!--Left side of the page to hold paragraph and image-->
+    <div id="leftCol">
+        <h1 id="aboutTitle"  style="font-size: 50px;">About Me</h1>
+        <div id="IntroPara">
+            <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Hello everyone! My name is Shachi Desai and I am a third year student pursuing a Bachelor of IT in Technology Management. My goal is to puruse 
+                a career in AI or data analytics. Aside from school I enjoy travelling, dancing, and spending time with friends and family. </p>
+            <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">You can check out my projects under the project tab and contact me by filling out the form under the contact tab.</p>
+        </div>
+        <figure id="image">
+            <img src="Assets/images/shachiPic.png" alt="Picture of Shachi">
+        </figure>
+    </div>
+    <!--Right side of the page to include the video-->
+    <div id="rightCol">
+        <div class="vidInstruct">
+            <div id="vidInstruct">
+                <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Watch the video to find out more!</h3>
+            </div>
+        </div>
+        <video controls poster="Assets/images/shachiPic.png" preload = "auto" loop muted id="myVideo">
+            <source src="Assets/images/video.MP4" type="video/mp4">
+        </video>
+        <br>
+        <button onclick="playPause()">Play/Pause Button</button>
+        <!--Logic for play/pause in script -->
+        <script>
+            var mybtn=document.getElementById("myVideo");
+            function playPause()
+            {
+                if(mybtn.paused)
+                    mybtn.play();
+                else
+                    mybtn.pause();
+            }        
+        </script>
+    </div>
+</div>

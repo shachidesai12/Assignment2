@@ -1,0 +1,302 @@
+*{
+    font-family: sans-serif;
+}
+
+#wrapper {
+    min-width: 960px;
+    min-height: 755px;
+    background-color: rgb(226, 247, 255);
+    color: rgb(50, 191, 242);
+}
+/**************************************************/
+/*CSS for header on ALL pages*/
+.logo{
+    margin-left: 5px;
+    font-size: 30px;
+}
+header {
+    width: 100%;
+    height: 35px;
+    background-color: rgb(250, 254, 255);
+    color: rgb(50, 191, 242);
+    position: fixed; /* Keep navBar at top when scrolling */
+    top: 0; 
+    
+}
+/* put nav bar contents horizontal*/
+header *{
+    display: inline;
+}
+ /* Space out navigation tabs*/
+header li{
+    margin: 12px
+}
+
+header li a{
+    text-decoration: none;
+    color: rgb(34, 34, 120);
+    font-size: 25px;
+}
+
+/*change colour of navbar when hovered over*/
+#header .navBar ul li:hover a {
+    color:rgb(50, 191, 242);
+}
+
+#header .navBar{
+    width: 99%;
+    display: inline-flex; /*Make sure logo is inline with other contents*/
+    justify-content: space-between;
+    background-color: rgb(221, 246, 252);
+    color: rgb(34, 34, 120);
+}
+
+#pageLinks{
+    align-items: center;
+    color: rgb(50, 191, 242);
+    font-size: 20px;
+}
+
+/**************************************************/
+/*CSS for HOME pages*/
+#homePage {
+    float: inline-start; /*Make sure it is positioned at the top*/
+    width: 100%;
+    min-height: 775px;
+    /*Angular Gradient*/
+    background: -moz-linear-gradient(25deg, rgb(50, 191, 242) 0%, rgb(202, 240, 252) 100%);
+    background: -webkit-linear-gradient(25deg, rgb(50, 191, 242) 0%, rgb(202, 240, 252) 100%);
+    background: -o-linear-gradient(25deg, rgb(50, 191, 242) 0%, rgb(202, 240, 252) 100%);
+    background: linear-gradient(-100deg, rgb(50, 191, 242) 0%, rgb(202, 240, 252) 100%);
+
+}
+
+#homeText {
+    margin-top: 110px;
+    margin-left: 100px;
+    background-color: transparent;
+    color: rgb(29, 29, 104);
+}
+
+#homeText h1{
+    font-size: 65px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#homeText h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box {
+    height: 9%;
+    width: 50%;
+    background-color: transparent;
+    margin-left: 30%;
+    margin-top: 5%;
+    opacity: 1;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 15px;
+    border-style:solid
+}
+
+#box{
+    color: rgb(29, 29, 104);
+    font-size: 13px;
+}
+
+
+/**************************************************/
+/*CSS for background of About, Contact, Projects*/
+#pageBack {
+    float: left;
+    width: 100%;
+    height: 775px;
+    /*Linear Gradient*/
+    background: -moz-linear-gradient( rgb(50, 191, 242) 0%, rgb(213, 244, 255) 100%);
+    background: -webkit-linear-gradient(rgb(50, 191, 242) 0%, rgb(213, 244, 255) 100%);
+    background: -o-linear-gradient(rgb(50, 191, 242) 0%,  rgb(213, 244, 255) 100%);
+    background: linear-gradient( rgb(50, 191, 242) 0%,  rgb(213, 244, 255) 100%);
+
+}
+
+/**************************************************/
+/*CSS for CONTACT pages*/
+
+/*Titletext for both contact and project page*/
+.titleText {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: transparent;
+    color: rgb(29, 29, 104);
+} 
+
+#formContents{
+    margin-left: 30px;
+}
+
+#inputBtn{
+    align-items: center;
+    margin: 10px;
+    display: flex; /*Align both buttons*/
+}
+
+#pageBack h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#formContents{
+    font-size: 20px;
+  }
+
+
+/**************************************************/
+/*CSS for ABOUT pages*/
+#rightCol{
+    float: right;
+    width: 50%;
+    height: 775px;
+    /*Angular Gradient*/
+    background: -moz-linear-gradient(180deg, rgb(50, 191, 242) 0%, rgb(202, 240, 252)100%);
+    background: -webkit-linear-gradient(180deg, rgb(50, 191, 242) 0%, rgb(202, 240, 252) 100%);
+    background: -o-linear-gradient(180deg, rgb(50, 191, 242) 0%,rgb(202, 240, 252) 100%);
+    background: linear-gradient(180deg, rgb(50, 191, 242) 0%, rgb(202, 240, 252) 100%);
+}
+
+#leftCol{
+    float: left;
+    width: 50%;
+    height: 775px;
+    /*Angular Gradient*/
+    background: -moz-linear-gradient(180deg, rgb(50, 191, 242) 0%, rgb(202, 240, 252)100%);
+    background: -webkit-linear-gradient(180deg, rgb(50, 191, 242) 0%, rgb(202, 240, 252) 100%);
+    background: -o-linear-gradient(180deg, rgb(50, 191, 242) 0%,rgb(202, 240, 252) 100%);
+    background: linear-gradient(180deg, rgb(50, 191, 242) 0%, rgb(202, 240, 252) 100%);
+}
+
+#leftCol h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    margin-top: 5px;
+    margin-left: 50px;
+    max-width: 58%; /*430px;*/
+    max-height: 48%/*340px;*/
+    
+    transition: transform .2s; /* Animation */
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+#IntroPara{
+    font-size: 18px;
+    margin-left: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    color: rgb(29, 29, 104);
+}
+
+#aboutTitle {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: transparent;
+    color: rgb(29, 29, 104);
+}
+
+#vidInstruct{
+    color: rgb(34, 34, 120);
+    font-size: 100%;
+}
+
+/*Section in which video is in*/
+#myVideo{
+    width: 70%;
+    height: 50%;
+  }
+
+  /*Dimensions for actual video*/
+video{
+    margin-left: 140px;
+    margin-top: 60px;
+}
+
+/*Play/Pause button*/
+button{
+  background-color: rgb(34, 34, 120);
+  color: white;
+  height: 55px;
+  border: 2px whitesmoke;
+  border-radius: 5px; /*This rounds the edges*/
+  margin-left: 48%;
+  margin-top: 25px;
+}
+
+button:hover
+{
+    background-color: white;
+    color: rgb(34, 34, 120);
+    height: 50px;
+    border: 2px whitesmoke;
+    border-radius: 5px; /*This rounds the edges*/
+}
+
+/**************************************************/
+/*CSS for FOOTER*/
+#footer {
+    background-color: rgb(34, 34, 120);
+    color: rgb(221, 246, 252);
+    text-align: center;
+  }
+
+  #footer p1 {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+/**************************************************/
+/*CSS for PROJECT*/
+
+.projectNames h1,h3{
+  height: 15%;
+  width: 55%;
+  background-color: rgb(160, 231, 253);
+  margin-left: 24%;
+  margin-top: 10%;
+  text-align: center;
+  padding: 13px 0px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: rgb(202, 240, 252);
+}
+
+.projectNames:hover {
+    transform: scale(1.1);
+}
+
+/*Dlow down zoom in to look smooth*/
+.projectNames{
+    transition: transform .5s; /* Animation */
+}
+
+a#one.btn{
+    text-decoration: none; /*Remove underline*/
+    padding: 10px;
+    border: 1px solid rgb(244, 144, 234);
+    background-color: rgb(252, 202, 247);
+    color: black;
+    margin-left: 38%;
+    border-radius: 15px;
+  }
+
+a#two.btn{
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid rgb(244, 144, 234);
+    background-color: rgb(252, 202, 247);
+    color: black;
+    margin-left: 40%;
+    border-radius: 15px;
+  }
+
+ 

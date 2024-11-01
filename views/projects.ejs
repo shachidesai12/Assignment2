@@ -1,8 +1,27 @@
 <% include Partials/header.ejs%>
 <% include Partials/mainNav.ejs%>
 <% include Partials/footer.ejs%>
+
     <!--Main Content-->
-    <h1><%= title %></h1>
-    <p>These are the <%= title %></p> <!--The value replaced by title is initialized in js file-->   
-    <h1>TESTING</h1>
+    <div id="pageBack">
+        <h1 class="titleText" style="font-size: 50px;">View my <%= title %>...</h1>
+        <div class="projectNames">
+        <link href="/Content/full.css" rel="stylesheet" type="text/css">
+            
+            <div id="firstProj">
+                <h1>Personal Profile</h1>
+                <!--Create a button so that link opens on new page-->
+                <a id="one" class="btn" href="https://github.com/shachidesai12/WebDevTutorial" target="_blank">
+                    Click here to view personal profile
+                </a>
+            </div>
+            <div id="secondProj">
+                <h3>Encryption/Decryption Project</h3>
+                <a id="two" class="btn" href="https://github.com/shachidesai12/OOP" target="_blank">
+                    Click here to view project
+                </a>
+            </div>
+            
+        </div>
+    </div>
 

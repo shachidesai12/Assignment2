@@ -1,0 +1,42 @@
+<% include Partials/header.ejs%>
+<% include Partials/mainNav.ejs%>
+<% include Partials/footer.ejs%>
+<div id="pageBack">
+    <link href="/Content/full.css" rel="stylesheet" type="text/css">
+    <h1 class="titleText" style="font-size: 50px;">Contact Me</h1>
+        <!--Create form inputs -->
+        <div id="formContents">
+            <form action="mailto:shachi.desai@hotmail.com" method="post" enctype="text/plain" name="form">
+                <!--Use post to send-->
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" size="32" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email"  name="email" placeholder="Enter a valid email" size="50" required>
+                </p>
+                <p>
+                    <label for="comments">Comments:</label>
+                    <br>
+                    <textarea id="comments" name="comments" cols="50" rows="9"></textarea>
+                </p>
+                <p>
+                    <label for="NetworkingEvent">Would you be interested in coming to a networking event?</label>
+                    <select name="NetworkingEvent" id="NetworkingEvent">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </p>
+                <!--Buttons to submit or reset the form-->
+                <div id="inputBtn">
+                    <div id="submit">
+                        <input type="submit" value="SUBMIT" style="font-size: 18px;">
+                    </div>
+                    <div id="reset">
+                        <input type="reset" value="RESET" style="font-size: 18px;">
+                    </div>
+                </div>      
+            </form>
+        </div>
+    </div>
