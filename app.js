@@ -6,7 +6,7 @@ let logger = require('morgan');
 
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
-//let projectsRouter = require('./routes/projects');
+
 const { title } = require('process');
 
 let app = express();
@@ -22,10 +22,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'))); //Public folder contains accesible parts of your site 
 app.use(express.static(path.join(__dirname, 'node_modules'))); //Public folder contains accesible parts of your site 
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-//app.use('/projects',projectsRouter);
-//app.use('/contact',contactRouter);
+app.use('/', indexRouter); // localhost:3000
+app.use('/users', usersRouter); // localhost:3000/users
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
